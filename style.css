@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-sans-serif-poppins: 'Poppins', sans-serif;
+    --bs-font-sans-serif-arial: Arial, Helvetica, sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-font-arial: Arial, sans-serif;
+    --bs-font-roboto: 'Roboto', sans-serif;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --body-width: 100%;
+    --max-body-width: 1400px;
+    --n-blocks: 4;
+    --n-cards: 4;
+    --padding-1-rem: 1rem;
+    --margin-1-rem: 1rem;
+    --margin-percen-01: 1%;
+    --padding-percen-01: 1%;
+    --margin-05-rem: 0.5rem;
+    --background-color-menu: hsl(220, 24%, 12%);
+    --background-color-footer: #24262b;
+    --background-color-footer_2: #343434;
+    --background-color-footer_5: hsl(0, 0%, 99%);
+}
+
+
+html {
+    background: white;
+}
+
+html, body {
+    height: 100%;
+    width
+    margin: 0;
+    width: var(--body-width);
+}
+
+.footer{
+	background-color: var(--background-color-footer_5);
+    padding: calc(var(--padding-percen-01) * 2) 0 0 0;
+    font-family: var(--bs-font-roboto);
+}
+
+
+.footer__container__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 1.5em;
+    padding-bottom: 0.5em;
+    }
+
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    min-width: 5.5rem;
+    margin: 0 0.3em 0 0.3em;
+    border-bottom: 1px solid hsl(0, 0%, 94%);
+    padding-bottom: 3rem;
+}
+
+.footer__content:nth-of-type(4) h3 {
+    padding: 0 0 0 0.3em;
+}
+
+.footer__content h3.hover {
+    text-decoration: underline; /* Зміна кольору заголовка при наведенні на li */
+}
+
+.footer__title {
+  margin-bottom: 1.5rem;
+  font-size: clamp(0.85rem, 1.15vw, 1.2rem);
+}
+
+
+ul.footer__list,
+ul.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: .75rem;
+}
+
+
+ul.footer__list li {
+    color: hsl(0, 0%, 35%);
+    list-style: none;
+    font-size: clamp(0.7rem, 1.02vw, 0.85rem);
+
+}
+
+
+ul.footer__links li {
+    list-style: none;
+    font-size: clamp(0.7rem, 1.02vw, 0.85rem);
+
+}
+
+ul.footer__links li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 35%);
+    font-size: clamp(0.7rem, 1.01vw, 0.85rem);
+
+}
+
+ul.footer__list li:hover, ul.footer__links li a:hover {
+    color: black;
+}
+
+
+
+.footer__social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+
+.footer__social-link {
+  font-size: clamp(1rem, 1.15vw, 1.2rem);
+  color: hsl(0, 0%, 35%);
+}
+
+
+.footer__social-link:hover {
+    scale: 1.2;
+}
+
+
+.footer__copy {
+  display: block;
+  margin: 0;
+  padding: 0 0 1em 0;
+  text-align: center;
+  font-size: clamp(0.7rem, 1.02vw, 0.85rem);
+  color: hsl(0, 0%, 55%);
+}
+
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: #fff;;
+  box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+  display: inline-flex;
+  padding: .25rem;
+  z-index: 10;
+  opacity: .8;
+  transition: .4s;
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
+
+.scrollup__icon {
+  color: hsl(31, 100%, 70%);
+}
+
+
+.show-scroll {
+  bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 440px) {
+
+    .footer__container__main {
+    justify-content: center;
+    }
+
+    .footer__content {
+    padding-bottom: 1.5rem;
+}
+    .footer__content:nth-of-type(4) h3 {
+    padding: 0;
+}
+
+}
