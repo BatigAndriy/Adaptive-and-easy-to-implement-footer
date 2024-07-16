@@ -1,0 +1,1 @@
+# Adaptive-and-easy-to-implement-footer
